@@ -41,13 +41,11 @@ function rows(text) {
     var cont = 0; 
     var result = []; 
     for (let index = 0; index < rows.length; index++) {
-        document.write(isNumber(rows[index].substring(0,1)));
         if (isNumber(rows[index].substring(0,1))){
             result[cont] = rows[index];
             cont++;  
         }
     }
-    document.write(result);
     return result; 
 }
 
